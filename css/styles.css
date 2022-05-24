@@ -1,0 +1,233 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --acent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --bg-color-button: #f5f4fa;
+  --hero-bg-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* цвет логотипа  #2196F3 */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
+
+}
+
+.logo {
+  color: var(--acent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-studio {
+  color: #000000;
+}
+
+.logo-footer {
+  color: var(--primary-bg-color);
+}
+/* site-nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+
+/* Contacts */
+
+.contacts .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--acent-color);
+}
+.site-nav .link.current {
+  color: var(--acent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-bg-color);
+}
+.hero-title {
+  padding: 200px 452px 200px 452px;
+  color: var(--primary-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.section-title {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.section-team .section-title {
+  background-color: var(--bg-color-button);
+}
+.team-list .section-title-team {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list .text {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* features */
+
+.feature-list .title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Examples */
+.work-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.work-list .text {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.work-list .section-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Button */
+.btn {
+  color: var(--primary-bg-color);
+  background-color: var(--acent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.buttons-nav .button-nav {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.buttons-nav .button-nav:hover,
+.buttons-nav .button-nav:focus {
+  color: var(--primary-bg-color);
+  background-color: #2196f3;
+}
+
+/* Footer-contacts */
+.link-footer {
+  color: var(--footer-contacts-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.link-map {
+  color: var(--primary-bg-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.link-map:hover,
+.link-map:focus {
+  color: var(--acent-color);
+}
+.page-footer {
+  background-color: var(--hero-bg-color);
+}
+
+.contacts-footer-list .link-footer:hover,
+.contacts-footer-list .link-footer:focus {
+  color: var(--acent-color);
+}
+
