@@ -20,6 +20,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -98,14 +100,15 @@ body {
 /* hero */
 .hero {
   background-color: var(--hero-bg-color);
+  text-align: center;
 }
 .hero-title {
-  padding: 200px 452px 200px 452px;
+margin-top: 0;
+margin-bottom: 45px;
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -138,6 +141,8 @@ body {
 /* features */
 
 .feature-list .title {
+  margin-top: 0;
+margin-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -162,6 +167,7 @@ body {
 }
 
 .work-list .section-title {
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -180,6 +186,13 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  border :var(--acent-color);
+  margin-bottom: 294px;
+  
 }
 
 .buttons-nav .button-nav {
