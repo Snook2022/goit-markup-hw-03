@@ -9,31 +9,35 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
       <div class="container">
-      <a href="portfolio.html" class="logo"> Web<span class="logo-studio">Studio</span></a>
-      <nav>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="#" class="link">Контакты</a></li>
+        <a href="portfolio.html" class="logo"> Web<span class="logo-studio">Studio</span></a>
+        <nav>
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link">Студия</a></li>
+            <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
+      </div>
     </header>
     <main>
       <!--Услуги-->
       <section class="section">
-        <h1 class="visually-hidden">Примеры работ</h1> 
+        <div class="container">
+        <h1 class="visually-hidden">Примеры работ</h1>
         <ul class="buttons-nav list">
           <li><button type="button" class="button-nav">Все</button></li>
           <li><button type="button" class="button-nav">Веб-сайты</button></li>
@@ -41,11 +45,9 @@
           <li><button type="button" class="button-nav">Дизайн</button></li>
           <li><button type="button" class="button-nav">Маркетинг</button></li>
         </ul>
-      
 
-      <!--Примеры работ-->
-      
-        
+        <!--Примеры работ-->
+
         <ul class="work-list list">
           <li>
             <img src="./images/team.jpg" alt="Технокряк" width="370" />
@@ -93,10 +95,12 @@
             <p class="text">Приложение</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!--Футер-->
     <footer class="page-footer">
+    <div class="container">
       <a href="portfolio.html" class="logo"> Web<span class="logo-footer">Studio</span></a>
       <address>
         <ul class="contacts-footer-list list">
@@ -112,6 +116,7 @@
           <li><a href="mailto:info@example.com" class="link-footer">info@example.com</a></li>
           <li><a href="tel:+380991111111" class="link-footer">+38 099 111 11 11</a></li>
         </ul>
+      </div>
       </address>
     </footer>
   </body>

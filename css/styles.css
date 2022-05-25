@@ -48,7 +48,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid tomato;
-
 }
 
 .logo {
@@ -99,12 +98,12 @@ body {
 
 /* hero */
 .hero {
+  padding: 200px 452px;
   background-color: var(--hero-bg-color);
   text-align: center;
 }
 .hero-title {
-margin-top: 0;
-margin-bottom: 45px;
+margin: 45px 248px;
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -121,6 +120,10 @@ margin-bottom: 45px;
 }
 .section-team .section-title {
   background-color: var(--bg-color-button);
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .team-list .section-title-team {
   color: var(--primary-text-color);
@@ -142,7 +145,7 @@ margin-bottom: 45px;
 
 .feature-list .title {
   margin-top: 0;
-margin-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -150,7 +153,10 @@ margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.feature-list {
+padding: 94px 215px;
 
+}
 /* Examples */
 .work-list .title {
   color: var(--title-text-color);
@@ -167,7 +173,6 @@ margin-bottom: 10px;
 }
 
 .work-list .section-title {
-
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -179,7 +184,7 @@ margin-bottom: 10px;
 .btn {
   color: var(--primary-bg-color);
   background-color: var(--acent-color);
-  font-family: Roboto;
+  font-family: Roboto ;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -190,13 +195,12 @@ margin-bottom: 10px;
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
-  border :var(--acent-color);
+  border: var(--acent-color);
   margin-bottom: 294px;
-  
 }
 
 .buttons-nav .button-nav {
-  font-family: 'Roboto';
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -204,6 +208,8 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border: var(--acent-color);
 }
 .buttons-nav .button-nav:hover,
 .buttons-nav .button-nav:focus {
@@ -243,4 +249,9 @@ margin-bottom: 10px;
 .contacts-footer-list .link-footer:focus {
   color: var(--acent-color);
 }
-
+.section {
+  padding: 94px 215px;
+}
+.buttons-nav {
+  margin-bottom: 34px;
+}
