@@ -50,7 +50,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 
 .logo {
@@ -322,6 +321,9 @@ img {
   margin-bottom: 34px;
   justify-content: center;
 }
+.button-portfolio {
+  margin-right: 8px;
+}
 .section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -355,6 +357,8 @@ img {
 }
 .page-footer {
   background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts-footer-list .link-footer:hover,
