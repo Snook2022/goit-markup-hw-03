@@ -93,8 +93,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -158,6 +156,11 @@ img {
   font-size: 36px;
   line-height: 1.17;
 }
+
+.section {
+  padding-bottom: 94px;
+}
+
 .section-team {
   background-color: var(--bg-color-button);
   padding-top: 94px;
@@ -365,9 +368,7 @@ img {
 .contacts-footer-list .link-footer:focus {
   color: var(--acent-color);
 }
-.section {
-  padding-bottom: 94px;
-}
+
 .buttons-nav {
   margin-bottom: 34px;
 }
