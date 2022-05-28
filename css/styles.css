@@ -17,10 +17,28 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-
+address {
+  font-style: normal;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -88,6 +106,8 @@ img {
 
 .site-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -116,6 +136,9 @@ img {
 }
 
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -149,18 +172,31 @@ img {
   letter-spacing: 0.06em;
   width: 696px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.seaction-feature {
+  padding-bottom: 47px;
+}
 .section-title {
   color: var(--primary-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
-
-.section {
+.feature-list {
+  display: flex;
+}
+.section-work {
+  padding-top: 47px;
+}
+.work {
   padding-bottom: 94px;
 }
-
 .section-team {
   background-color: var(--bg-color-button);
   padding-top: 94px;
@@ -171,6 +207,7 @@ img {
 }
 .text-title {
   margin-right: 30px;
+  width: 270px;
 }
 .team-list .section-title-team {
   color: var(--primary-text-color);
@@ -179,6 +216,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-list .text {
   color: var(--title-text-color);
@@ -191,6 +229,10 @@ img {
 .team-list {
   display: flex;
   margin-left: -30px;
+}
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .img-team {
   flex-basis: calc(100% / 4 - 30px);
@@ -212,12 +254,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.feature-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: flex;
-  margin-right: 30px;
-}
+
 /* Examples */
 .work-list .title {
   color: var(--title-text-color);
@@ -233,15 +270,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.work-list .section-title {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .work-list {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -253,16 +283,8 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.text {
-  margin: 20px 24px 54px 24px;
-  margin-top: 4px;
-}
 
-.section-title {
-  margin: 20px 24px;
-  text-align: center;
-}
-.section-title-portfolio {
+.work-list .section-title-portfolio {
   color: var(--primary-text-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -271,24 +293,23 @@ img {
   line-height: 2;
 
   letter-spacing: 0.06em;
-}
-.section-title-portfolio {
-  margin: 20px 24px 54px 24px;
   margin-bottom: 4px;
 }
 
 .images {
-  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 .work-list-img {
   display: flex;
+  margin-left: -30px;
 }
+
 /* Button */
 .btn {
   color: var(--primary-bg-color);
   background-color: var(--acent-color);
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -299,6 +320,10 @@ img {
   min-width: 200px;
   text-align: center;
   border: var(--acent-color);
+}
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
 }
 
 .buttons-nav .button-nav {
@@ -321,10 +346,9 @@ img {
 }
 .buttons-nav {
   display: flex;
-  margin-bottom: 34px;
   justify-content: center;
 }
-.button-portfolio {
+.button-portfolio:not(:last-child) {
   margin-right: 8px;
 }
 .section-portfolio {
@@ -332,6 +356,7 @@ img {
   padding-bottom: 94px;
 }
 .portfolio-content {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 /* Footer-contacts */
@@ -363,12 +388,14 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.page-footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .contacts-footer-list .link-footer:hover,
 .contacts-footer-list .link-footer:focus {
   color: var(--acent-color);
-}
-
-.buttons-nav {
-  margin-bottom: 34px;
 }
